@@ -1,0 +1,162 @@
+body{
+    font:Arial,Helvetica,Sans-serif;
+}
+#container{
+    width:1050px;
+    /* border:1px solid grey; */
+    margin:0px auto;  /*here opx for top and bottom,auto for left and right
+    makes the container at the middle of the page*/
+    
+}
+#header{
+    height:100px;
+    padding:20px 0;
+}
+h1 a{ /*styling the heading in the link*/
+    font-size:50px;
+    font-weight:100;
+    color:#861BBF;
+    text-decoration:none; /*helps to set no underline*/
+}
+#brand{
+    float:left; /*here the header div as well as the container div both are collapsed,
+    so we need to set the height of the header div to 100px*/
+}
+#searchBox{
+    float:right;
+    background:linear-gradient(#EAF289,#B7E953);
+    background:-webkit-linear-gradient(#EAF289,#B7E953);
+    background:-moz-linear-gradient(#EAF289,#B7E953);
+    background:-o-linear-gradient(#EAF289,#B7E953);
+    width:400px;
+    height: 60px;
+    padding:20px 20px 0 20px;
+    margin-top: 20px; /*using this property to align the heading and the searchbox */
+}
+.text{
+    float:left;
+    width:200px;
+    padding:5px; /*give padding to the text input for better decoration*/
+    font-size: 15px;
+    color:#E36A0C;
+    background: white url(Images/search.png) right center no-repeat;
+    border:1px solid #C8D03E;
+}
+.submit{
+    float:right;
+    padding:5px;
+    font-size:15px;
+    background: #A751D6;
+    margin:0;
+}
+.clear{
+    clear:both;
+}
+#menu{
+    height:80px;
+    background:linear-gradient(#F8F594,#D5D533);
+    background:-webkit-linear-gradient(#F8F594,#D5D533);
+    background:-moz-linear-gradient(#F8F594,#D5D533);
+    background:-o-linear-gradient(#F8F594,#D5D533);
+    padding:7px 0;
+}
+ul{
+ list-style: none;
+}
+#menu ul li{
+  float:left;  /*set the list items to float to the left*/
+  padding:0 30px;
+  height:30px;
+  border-right:1px solid black;
+}
+#menu ul li:last-child{
+    border-right: none;  /*setting no border for the last list item*/
+}
+#menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size:18px;
+    color:#5d12e7;
+    line-height:30px; /*to place the texts at the center of the line*/
+    /*add transition*/
+    transition: font-size 0.3s ease; /*ease indicates that the transition took place
+    slower first,then faster and ends slower*/
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease; /*for different browsers*/
+}
+#menu ul li a:hover,#menu ul li a.active{
+    font-size: 20px;
+    font-weight: bold;
+    color:#B314DB;
+}
+#introduction{
+    background:linear-gradient(#E5F2BB,#B7E952);
+    background:-webkit-linear-gradient(#E5F2BB,#B7E952);
+    background:-o-linear-gradient(#E5F2BB,#B7E952);
+    background:-moz-linear-gradient(#E5F2BB,#B7E952);
+    padding:30px;
+    margin:10px 0;
+}
+#introduction h3{
+    font-size: 45px;
+    color:#316901;
+    font-weight:normal;
+}
+#introduction p{
+    font-size:25px;
+    color:#628F19;
+    text-align:justify;
+}
+.sidebar{
+    height:500px;
+    width:450px;
+    border:1px solid #BAF46F;
+    border-radius:20px; /*make the borders curved*/
+    padding:10px 20px;
+}
+.sidebar h3{
+    color:#B314DB;
+    font-size: 30px;
+}
+#leftsidebar{
+    float:left;
+}
+#sidebar ul{
+    padding-top:8px; /*give padding to each list on the top*/
+}
+#rightsidebar{
+    float:right;
+}
+.sidebar ul li a{
+    text-decoration:none;
+    font-size:20px;
+    color:#5d12e7;
+    -webkit-transition: font-size 0.3s ease;
+    -moz-transition: font-size 0.3s ease;
+    -o-transition: font-size 0.3s ease;
+    -ms-transition: font-size 0.3s ease;
+    transition:font-size o.3s ease;
+}
+.sidebar ul li a:hover,.sidebar ul li a.active{
+    text-decoration:none;
+    font-size:23px;
+    color:#861BBF;
+    font-weight:bold;
+}
+#leftsidebar ul li{
+   padding:4px 0 4px 10px;
+   list-style-image:url(images/arrow.png);
+}
+#rightsidebar ul li{
+    list-style-image:url(images/tick.png);
+    padding:17px 0 17px 70px; 
+}
+.footer{
+    height:60px;
+    padding:10px 30px;
+    background: linear-gradient(#F6F390,#D5D533);
+    margin-top:15px;
+
+}
